@@ -5,7 +5,7 @@ DOSSEG
 .STACK 100H
 
 .DATA
-; ---------------- Constants & Messages ----------------
+; ---------------- Constants & Messages ------------------
 WORD_LENGTH EQU 8
 MAX_GUESSES  EQU 6
 
@@ -20,7 +20,7 @@ LOSE_MESSAGE DB 0Dh, 0Ah, "OOPS GAME OVER! YOU LOST:(", 0Dh, 0Ah, "$"
 GUESSES_LEFT DB "GUESSES LEFT: $"
 NEWLINE      DB 0Dh, 0Ah, "$"
 
-; ---------------- Variables ----------------
+; ---------------- Variables ------------------
 DISPLAY_DASH DB WORD_LENGTH DUP('-'), '$'
 SELECTED_WORD DB WORD_LENGTH DUP(0)
 
@@ -31,7 +31,7 @@ GAME_OVER_FLAG DB 0
 
 .CODE
 
-; ---------------- VGA Pixel Routine ----------------
+; ---------------- VGA Pixel Routine ------------------
 PUT_PIXEL PROC
     PUSH AX
     PUSH DI
@@ -49,7 +49,7 @@ PUT_PIXEL PROC
     RET
 PUT_PIXEL ENDP
 
-; ---------------- VGA Line Helper ----------------
+; ---------------- VGA Line Helper -----------------
 DRAW_LINE PROC
     PUSH AX
     PUSH BX
@@ -72,7 +72,7 @@ DRAW_LOOP:
     RET
 DRAW_LINE ENDP
 
-; ---------------- Hangman Graphics Drawer ----------------
+; ---------------- Hangman Graphics Drawer ------------------
 DRAW_HANGMAN PROC
     MOV CX, 50
     MOV DX, 20
