@@ -21,7 +21,7 @@ This project implements a fully functional **Hangman game** using x86 Assembly l
 
 ## 🛠️ Requirements
 
-- DOS environment or DOS emulator (e.g., DOSBox)
+- DOS environment or DOS emulator (e.g., DOSBox or vscode with dosbox extensions installed)
 - 16-bit x86 assembler (e.g., TASM, MASM, or NASM with `.MODEL SMALL` support)
 - VGA-compatible graphics (DOSBox works perfectly)
 
