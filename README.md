@@ -8,7 +8,7 @@ This project implements a fully functional **Hangman game** using x86 Assembly l
 - **Gameplay**: Displays underscores for unguessed letters and updates as the player guesses letters.
 - **Graphics**: Draws hangman parts (gallows, head, body, limbs) using VGA mode as the player makes wrong guesses.
 - **Win/Lose Conditions**:
-  - Win by guessing the word before using all guesses.
+  - Win by guessing the word before using all the guesses.
   - Lose if all guesses are used before completing the word.
 
 ## 🚀 Features
