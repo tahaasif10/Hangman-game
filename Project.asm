@@ -18,7 +18,7 @@ LOSE_MESSAGE DB 0Dh, 0Ah, "OOPS GAME OVER! YOU LOST:(", 0Dh, 0Ah, "$"
 GUESSES_LEFT DB "GUESSES LEFT: $"
 NEWLINE      DB 0Dh, 0Ah, "$"
 
-; ---------------- Variables ------------------
+; ---------------- Variables --------------------
 DISPLAY_DASH DB WORD_LENGTH DUP('-'), '$'
 SELECTED_WORD DB WORD_LENGTH DUP(0)
 
