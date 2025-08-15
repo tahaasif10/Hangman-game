@@ -1,4 +1,4 @@
-# Hangman Game in x86 Assembly
+# Hangman Game in x86 Assembly 
 
 This project implements a fully functional **Hangman game** using x86 Assembly language for DOS. It includes VGA graphics to draw the hangman figure progressively as the player makes incorrect guesses.
 
